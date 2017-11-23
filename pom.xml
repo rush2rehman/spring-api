@@ -15,7 +15,7 @@
 
   <modules>
     <module>jackson</module>
-
+    <module>springboot-jersey</module>
   </modules>
 
   <dependencyManagement>
