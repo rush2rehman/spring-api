@@ -61,7 +61,7 @@ public class OrderAPITester {
     given()
         .spec(requestSpecification)
         .contentType("application/json\r\n")
-        .body("{            \"id\" : \"1-\",      \"name\" : \"n1\"}")
+        .body("{            \"id\" : \"1\",      \"name\" : \"n1tuewt\"}")
         .when()
         .post("Order")
         .then()

@@ -16,6 +16,8 @@
   <modules>
     <module>jackson</module>
     <module>springboot-jersey</module>
+    <module>hibernate-validator</module>
+    <module>springboot-ssl</module>
   </modules>
 
   <dependencyManagement>

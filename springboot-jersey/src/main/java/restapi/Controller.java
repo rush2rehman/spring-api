@@ -1,6 +1,7 @@
 package restapi;
 
 
+import javax.validation.Valid;
 import org.springframework.http.HttpStatus;
 
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,7 +25,7 @@ public class Controller {
 
   @PostMapping(value = "/Order", consumes = APPLICATION_JSON)
   @ResponseStatus(HttpStatus.CREATED)
-  public void createOrder(@RequestBody Order order)
+  public void createOrder(@RequestBody @Valid Order order)
   {
     System.out.println("id-->"+order.getId());
     System.out.println("name-->"+order.getName());
