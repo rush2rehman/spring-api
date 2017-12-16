@@ -2,6 +2,8 @@ package restapi;
 
 
 import javax.validation.Valid;
+import javax.ws.rs.QueryParam;
+
 import org.springframework.http.HttpStatus;
 
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,8 +21,8 @@ public class Controller {
 
 
   @RequestMapping("/index")
-  public String index() {
-    return "Hello World!";
+  public String index(@QueryParam("name") String name) {
+    return "Hello World!"+name;
   }
 
   @PostMapping(value = "/Order", consumes = APPLICATION_JSON)
