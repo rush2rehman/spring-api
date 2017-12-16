@@ -22,7 +22,7 @@ public class Controller {
 
   @RequestMapping("/index")
   public String index(@QueryParam("name") String name) {
-    return "Hello World!"+name;
+    return "Hello Irfana!";
   }
 
   @PostMapping(value = "/Order", consumes = APPLICATION_JSON)
