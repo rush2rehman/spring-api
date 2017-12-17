@@ -18,6 +18,7 @@
     <module>springboot-jersey</module>
     <module>hibernate-validator</module>
     <module>springboot-ssl</module>
+    <module>jwt-playground</module>
   </modules>
 
   <dependencyManagement>
